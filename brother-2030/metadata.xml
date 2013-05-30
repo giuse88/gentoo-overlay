@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<maintainer>
+	<email>giuse88@gmail.com</email>
+	<name>Giuseppe  Pes </name>
+</maintainer> 
+<pkgmetadata>
+	<longdescription lang="en">
+		Driver for the printer brother 2030HL 
+	</longdescription>
+</pkgmetadata>
