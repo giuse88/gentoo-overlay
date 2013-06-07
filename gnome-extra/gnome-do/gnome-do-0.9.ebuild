@@ -35,7 +35,7 @@ RDEPEND=">=dev-lang/mono-2.0
 	>=dev-dotnet/rsvg-sharp-2.24.0
 	dev-dotnet/mono-addins[gtk]
 	dev-dotnet/notify-sharp
-	!<gnome-extra/gnome-do-plugins-0.9"
+	!<gnome-extra/gnome-do-plugins-0.8.4"
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.35
 	virtual/pkgconfig"
@@ -43,19 +43,6 @@ DEPEND="${RDEPEND}
 MAKEOPTS="${MAKEOPTS} -j1"
 
 src_prepare() {
-
-	#	epatch "${FILESDIR}"/${P}-mono-2.8.patch
-	#epatch "${FILESDIR}"/${P}-glib-2.32.patch
-
-	# Drop DEPRECATED flags
-#	sed -i -e 's:-D[A-Z_]*DISABLE_DEPRECATED::g' \
-#		configure.ac || die
-
-	# The same for -Werror
-#	sed -i -e 's:-Werror::' configure.ac || die
-
-#	intltoolize --force --copy --automake || die "intltoolize failed"
-#	eautoreconf
 	gnome2_src_prepare
 }
 
